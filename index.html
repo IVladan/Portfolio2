@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+<meta name="viewport" content="width=device-width initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+<title>Portfolio</title>
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#o_meni">O MENI</a>
+  <a href="#wrapper">ŠTA RADIM</a>
+  <a href="#nav">PORTFOLIO</a>
+  <a href="#kontakt">KONTAKT</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>//skripta za responsive navigaciju
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>//skripta za smooth scrolling
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<img src="images/background.jpg" alt="" style="width:100%"> 
+
+<div id="o_meni">
+<h1>O MENI</h1>
+<p>Ja sam Vladan ilić, frilenser i veb dizajner, i moja strast je stvaranje veb stranica. Obožavam svoj posao i volim da pretvaram Vaše ideje i koncepte u profitabilne veb prezentacije. Svojim znanjem i iskustvom veb sajtove činim funkcionalnim, modernim, prilagodljivog dizajna (lepo izgledaju i rade na svim urađajima), prilagodjeni su svim pretraživačima i imaju dobru SEO optimizaciju. Time ispunjavam visoke standarde na vebu i Vas i Vaše proizvode i usluge činim konkurentnim i dostupnim hiljadama potencijalnih mušterija.</p>
+<p> Ukoliko Vam je potreban sajt od ideje do realizacije, na pravom ste mestu! Svakom projektu pristupam veoma ozbiljno, uz profesionalan odnos i sa namerom da, uvažavajući želje i potrebe klijenta dođemo do zajedničkog rezultata na najvišem nivou. U svom radu koristim se najnovijim alatima i tehnologijama koje mi omogućavaju da klijentima kreiram jedinstvena i moderna rešenja u oblasti veb dizajna. Zadovoljstvo će mi biti da izradim ponudu koja će Vam pružiti tačne informacije o tome šta dobijate za svoj novac, a ukoliko ostane pitanja s Vaše strane, tu sam da na njih i odgovorim.
+Takodje je veoma bitna organizacija sadržaja koji treba da bude prikazan uredno, čitko i na pravom mestu kako bi na najbolji mogući način izrazio ono što Vi kao pojedinac ili firma želite da predstavite.</p></div>
+	<br><br><br><br>
+	
+	
+	
+<div id="wrapper">
+	<h1>ŠTA RADIM</h1><br>
+<div class="border">
+	<i class="fas fa-laptop" style="font-size: 100px"></i>
+	<h1>Veb dizajn - Izrada Veb sajta</h1><p>Nudim Vam kompletna, profesionalna, inovativna i moderna CMS rešenja u oblasti veb dizajna, bilo da imate potrebu za sajtom od par stranica ili kompleksnim veb sajtom.
+	</p>
+</div>
+<div class="border">
+	<i class="fas fa-search" style="font-size: 100px"></i>
+	<h1>SEO</h1><p>Istraživanja pokazuju da 90% korisnika prilikom pretraživanja ne ide dalje od prve strane. Optimizacija za pretraživače Vam omogućava da se dobro pozicionirate u Google pretrazi.
+	</p>
+</div>
+<div class="border">
+	<i class="fas fa-cog" style="font-size: 100px"></i>
+	<h1>Održavanje sajtova</h1><p>Nakon izrade novog veb sajta možete me angažovati za redovno ili periodično administriranje Vašeg veb sajta, bilo da se radi o tehničkom ili administriranju sadržaja.
+	</p>
+</div>	
+<div class="border">
+	<i class="fa fa-wordpress" aria-hidden="true" style="font-size: 100px"></i>
+	<h1>WordPress sajt</h1><p>Pored usluge razvijanja unikatnih rešenja nudim Vam implementaciju WordPress rešenja po najpovoljnijim uslovima.
+	</p>
+</div>
+<div class="border">
+	<i class="fas fa-paint-brush" style="font-size: 100px"></i>
+	<h1>Grafički dizajn</h1><p>Brend dizajn, dizajn logotipa, grafički dizajn banera, flajera, kataloga, vizit kartica i slično.
+	</p>
+</div>
+<div class="border">
+	<i class="fas fa-bullhorn" style="font-size: 100px"></i>
+	<h1>Online marketing</h1><p>Ukoliko želite da proširite svoje tržite ili da promovišete svoju djelatnost putem interneta, nudim Vam "PPC oglašavanje" kao i "Social media marketing" usluge.
+	</p>
+</div>	
+	</div><br><br><br>
+	
+	
+<div class="row">
+	<h1 id="nav">DOBRODOŠLI NA MOJ VEB PORTFOLIO</h1><p class="paragraf">Ovo su veb sajtovi koje sam kreirao, koristeći znanje stečeno na ITAkademiji</p><br>
+  <div class="column">
+    <img src="images/rad1.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt=""><p class="paragraf">Rad iz predmeta: "Uvod u HTML i CSS"</p>
+  </div>
+  <div class="column">
+    <img src="images/rad2.JPG" style="width:100%" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+	<p class="paragraf">Rad iz predmeta: "Adobe Dreamweaver CC"</p>
+  </div>
+  <div class="column">
+    <img src="images/rad3.JPG" alt="" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+	<p class="paragraf">Rad iz predmeta: "WordPress"</p>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<div>
+		<p class="paragraf">Ovo su veb sajtovi koje sam odradio sa zakupljenim WordPress temama, a radeći kao frilenser</p><br>
+  <div class="column">
+    <img src="images/wp1.jpg" style="width:100%; padding: 8px 12px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt=""><p class="paragraf">Auberge restaurant</p>
+  </div>
+	<div class="column">
+    <img src="images/wp2.jpg" style="width:100%; padding: 8px 12px;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt=""><p class="paragraf">Wedding site</p>
+  </div><div class="column">
+    <img src="images/wp4.jpg" style="width:100%; padding: 8px 12px;" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt=""><p class="paragraf">Site for interior design company</p>
+  </div><div class="column">
+    <img src="images/wp7.jpg" style="width:100%;  padding: 8px 12px" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" alt=""><p class="paragraf">Love coaches</p>
+  </div><div class="column">
+    <img src="images/wp5.jpg" style="width:100%;  padding: 8px 12px;" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" alt=""><p class="paragraf">Pizza restaurant</p>
+  </div><div class="column">
+    <img src="images/wp6.jpg" style="width:100%;  padding: 8px 12px;" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" alt=""><p class="paragraf">Site for watches</p>
+  </div>
+		
+	</div>
+	
+	<div>
+		<p class="paragraf">Ovo su logoi i naslovna stranica knjige, koje sam kreirao u Dizajn studiju na ITAkademiji i kao frilenser</p><br>
+  <div class="column">
+    <img src="images/logo.jpg" style="width:100%; padding: 8px 12px;" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" alt=""><p class="paragraf">Logo za američku gradjevinsku firmu</p>
+  </div>
+	<div class="column">
+    <img src="images/logo2.jpg" style="width:100%; padding: 8px 12px;" onclick="openModal();currentSlide(11)" class="hover-shadow cursor" alt=""><p class="paragraf">Logo za CityScout 360</p>
+  </div><div class="column">
+    <img src="images/knjiga.jpg" style="width:100%; padding: 8px 12px;" onclick="openModal();currentSlide(12)" class="hover-shadow cursor" alt=""><p class="paragraf">Naslovna stranica za knjigu Drugo carstvo</p>
+  </div><div class="column">
+    <img src="images/logo3.jpg" style="width:100%;  padding: 8px 12px" onclick="openModal();currentSlide(13)" class="hover-shadow cursor" alt=""><p class="paragraf">Logo za restoran Food and wine</p>
+  </div>
+	</div>
+	
+</div>
+
+<div id="myModal" class="modal">
+  
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+ 
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext">1 / 13</div>
+      <img src="images/rad1.JPG" alt="" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 13</div>
+      <img src="images/rad2.JPG" alt="" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 13</div>
+      <img src="images/rad3.JPG" alt="" style="width:100%">
+    </div>
+	  <div class="mySlides">
+      <div class="numbertext">4 / 13</div>
+      <img src="images/wp1.jpg" alt="" style="width:100% 
+  padding: 8px 12px;">
+    </div>
+	  <div class="mySlides">
+      <div class="numbertext">5 / 13</div>
+      <img src="images/wp2.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">6 / 13</div>
+      <img src="images/wp4.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">7 / 13</div>
+      <img src="images/wp7.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">8 / 13</div>
+      <img src="images/wp5.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">9 / 13</div>
+      <img src="images/wp6.jpg" alt="" style="width:100%">
+    </div>
+	  <div class="mySlides">
+      <div class="numbertext">10 / 13</div>
+      <img src="images/logo.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">11 / 13</div>
+      <img src="images/logo2.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">12 / 13</div>
+      <img src="images/knjiga.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">13 / 13</div>
+      <img src="images/logo3.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    </div>
+
+<script>//skripta za galeriju slika
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	<br><br><br>
+	
+
+	
+	
+<div>
+<h1 id="kontakt">KONTAKT</h1>
+<p class="paragraf">Odvojite par minuta da me kontaktirate. Za sva pitanja stojim Vam na raspolaganju.</p>
+<form id="frmContact" action="contact.php" method="post">
+    <div id="mail-status"></div>
+    <div class="contact-row column-right">
+        <label style="padding-top: 20px;">Ime i prezime:</label> <span
+            id="userName-info" class="info"></span><br /> <input
+            type="text" name="userName" id="userName"
+            class="demoInputBox">
+    </div>
+    <div class="contact-row column-right">
+        <label>Imejl:</label> <span id="userEmail-info" class="info"></span><br />
+        <input type="text" name="userEmail" id="userEmail"
+            class="demoInputBox">
+    </div>
+    <div class="contact-row">
+        <label>Broj telefona:</label> <span id="subject-info" class="info"></span><br />
+        <input type="text" name="subject" id="subject"
+            class="demoInputBox">
+    </div>
+    <div>
+        <label>Poruka:</label> <span id="content-info" class="info"></span><br />
+        <textarea name="content" id="content" class="demoInputBox"
+            rows="3"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Send" class="btnAction" />
+    </div>
+</form>
+	<div class="adresa">
+		<p><i class="fas fa-map-marker-alt"></i> Adresa: Srbija: Beograd</p>
+		<p><i class="fas fa-phone"></i> Broj telefona: +381 62 960 37 03</p>
+		<p><i class="far fa-envelope"></i> Imejl: vlado_ilic2008@yahoo.com</p>
+	</div>
+</div>	
+
+<footer>
+<p class="footer1">&copy; Vladan Ilić</p>
+<p class="footer2">Designed by Vladan Ilić</p>
+
+</footer>
+
+
+</body>
+</html>
